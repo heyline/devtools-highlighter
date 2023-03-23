@@ -18,7 +18,7 @@ browser.runtime.onConnect.addListener(port => {
 
 // Also handle messages from the devtools panel.
 browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
-  if (sender.url != browser.runtime.getURL("/devtools/panel/panel.html")) {
+  if (sender.url !== browser.runtime.getURL("/devtools/panel/panel.html")) {
     return;
   }
 

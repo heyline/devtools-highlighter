@@ -12,8 +12,7 @@ let paneTemplate = window.browser ? 'panel/panel.html' : 'devtools/panel/panel.h
 // Firefox has them on window.browser
 let browser = window.browser || chrome;
 
-// In chrome this function
-// doesn't return a promise
+// In chrome this function doesn't return a promise
 browser.devtools.panels.create(
   "Highlighter",
   "../icons/logo.svg",

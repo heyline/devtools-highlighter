@@ -4,20 +4,14 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="style.css">
+
 <div class="toolbar">
-  <button class="clear">Clear</button>
-  <input type="text" id="query" placeholder="Search query">
-  <span class="count"></span>
-  <label>Type
-    <select id="type">
-      <option value="computed" selected>CSS Computed Style</option>
-      <option value="selector">CSS Selector</option>
-    </select>
-  </label>
-  <label><input type="checkbox" id="unlimited"> Unlimited results</label>
+    <button id="skipDiv">跳过某个div</button>
 </div>
+
 <div class="output">
-  <div id="message"></div>
-  <ul id="nodes"></ul>
+    <ul id="nodes"></ul>
 </div>
+
+
 <script src="devtools-panel.js"></script>
