@@ -23,8 +23,12 @@ divSelect.addEventListener("click", selectDiv);
  * Clear the output.
  */
 function selectDiv() {
-    debugger
+
     console.error(666)
+
+
+
+
     browser.runtime.sendMessage({
         tabId: browser.devtools.inspectedWindow.tabId,
         action: "selectDiv"
@@ -37,4 +41,7 @@ browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
     if (request.tabId !== browser.devtools.inspectedWindow.tabId) {
         return;
     }
+
+    console.error(request)
+
 });
